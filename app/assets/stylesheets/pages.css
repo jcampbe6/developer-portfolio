@@ -1,0 +1,87 @@
+/* Place all the styles related to the Pages controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/ */
+
+
+/* All Pages */
+.center-text {
+    text-align: center;
+}
+
+.col-centered {
+    float: none;
+    margin: 0 auto;
+}
+
+
+/* Welcome Page*/
+.home .jumbotron {
+    height: 600px;
+    /*https://upload.wikimedia.org/wikipedia/commons/a/a7/Atlanta_Skyline_from_Buckhead.jpg*/
+    background: url('https://wallpaperscraft.com/image/glare_background_blur_dark_63553_3840x2160.jpg') no-repeat center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.home .tagline {
+    border-radius: 25px;
+    background: radial-gradient(ellipse at center, rgba(0,0,0,0.65) 0%,rgba(0,0,0,0) 100%);
+}
+
+.home h2 {
+    font-size: 40px;
+    font-weight: bold;
+    margin-top: 100px;
+    padding: 25px 35px;
+    color: #ffffff;
+}
+
+.home .highlight {
+    background: #e3e3e3;
+    color: #000000;
+}
+
+.home .btn {
+    background: rgba(30, 30, 30, .9);
+    color: #ffffff;
+}
+
+.home .btn:hover {
+    background: #D014FF;
+    color: #ffffff;
+    font-weight: bold;
+}
+
+.home .right {
+    float: right;
+    margin-right: 35px;
+}
+
+/* Portfolio Page */
+.portfolio-thumb {
+    max-width: 150px;
+    margin: 0 auto;
+    display: block;
+}
+
+.center-text {
+    text-align: center;
+}
+
+.horizontal-divider {
+    width: 100%;
+    border: solid;
+    border-width: thin;
+    border-color: #d5d5d5;
+    margin-bottom: 15px;
+}
+
+.link-black {
+    color: #000000;
+}
+
+.portfolio .column {
+    margin-bottom: 30px;
+}

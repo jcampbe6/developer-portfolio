@@ -1,0 +1,43 @@
+
+<div class="portfolio jumbotron">
+    <div class="container">
+        <% if @personal_projects != nil %>
+            <div class="row">
+                <h2>Personal Projects</h2>
+                <div class="horizontal-divider"></div>
+                <% @personal_projects.each do |project| %>
+                    <a href="/projects/<%= project.title %>" class="link-black">
+                        <section class="column col-lg-3 col-md-4 col-sm-6 center-text">
+                            <%= image_tag(project.thumbnail, alt: project.title, class: 'portfolio-thumb') %>
+                            <h3><%= project.title %></h3>
+                            <p><%= project.short_description %></p>
+                        </section>
+                    </a>
+                <% end %>
+            </div>
+        <% end %>
+
+        <% if @academic_projects != nil %>
+            <div class="row">
+                <h2>Academic Projects</h2>
+                <div class="horizontal-divider"></div>
+                <% @academic_projects.each do |project| %>
+                    <a href="/projects/<%= project.title %>" class="link-black">
+                        <section class="column col-lg-3 col-md-4 col-sm-6 center-text">
+                            <%= image_tag(project.thumbnail, alt: project.title, class: 'portfolio-thumb') %>
+                            <h3><%= project.title %></h3>
+                            <p><%= project.short_description %></p>
+                        </section>
+                    </a>
+                    <% if project.title == "Encrypt-O-File" %>
+                        <div class="clearfix visible-md-block"></div>
+                    <% end %>
+                    <% if project.title == "Day Planner" %>
+                        <div class="clearfix visible-lg-block visible-sm-block"></div>
+                    <% end %>
+                <% end %>
+            </div>
+        <% end %>
+    </div>
+</div>
+

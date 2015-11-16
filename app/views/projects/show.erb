@@ -1,0 +1,29 @@
+
+<div class="jumbotron">
+    <div class="project container">
+        <div class="row">
+            <div class="col-sm-6 center-text">
+                <h1>
+                    <%= @project.title %><br>
+                    <small><%= @project.short_description %></small>
+                </h1>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-sm-6">
+                <%= image_tag(@project.thumbnail, alt: @project.title, class: 'project-thumb') %>
+            </div>
+
+            <div class="col-sm-6">
+                <p><%= @project.long_description %></p>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-sm-12">
+                <%= link_to "Edit", edit_project_path(@project.title), class: "btn btn-primary form-btn" %>
+            </div>
+        </div>
+    </div>
+</div>
