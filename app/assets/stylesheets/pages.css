@@ -13,6 +13,10 @@
     margin: 0 auto;
 }
 
+.link-black {
+    color: #000000;
+}
+
 
 /* Welcome Page*/
 .home .jumbotron {
@@ -66,20 +70,12 @@
     display: block;
 }
 
-.center-text {
-    text-align: center;
-}
-
 .horizontal-divider {
     width: 100%;
     border: solid;
     border-width: thin;
     border-color: #d5d5d5;
     margin-bottom: 15px;
-}
-
-.link-black {
-    color: #000000;
 }
 
 .portfolio .column {
