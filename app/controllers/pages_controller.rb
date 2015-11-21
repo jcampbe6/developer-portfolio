@@ -5,7 +5,7 @@ class PagesController < ApplicationController
 
     def portfolio
         @personal_projects = Project.all.where(category: "Personal")
-        @academic_projects = Project.all.where(category: "Academic")
+        @academic_projects = Project.all.where(category: "Academic").order('id ASC')
     end
 
     def about
