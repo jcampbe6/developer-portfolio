@@ -1,18 +1,20 @@
 
 <div class="jumbotron">
     <div class="project container">
-        <div class="row">
-            <div class="col-sm-6 center-text">
-                <h1>
-                    <%= @project.title %><br>
-                    <small><%= @project.short_description %></small>
-                </h1>
-            </div>
-        </div>
 
         <div class="row">
-            <div class="col-sm-6">
+            <div class="col-sm-6 center-text">
+                <h2>
+                    <%= @project.title %><br>
+                    <small><%= @project.short_description %></small>
+                </h2>
                 <%= image_tag(@project.thumbnail, alt: @project.title, class: 'project-thumb') %>
+                <% unless @project.website_url.nil? %>
+                    <h4><%= link_to @project.website_url %></h4>
+                <% end %>
+                <% unless @project.github_url.nil? %>
+                    <h4><%= link_to @project.github_url %></h4>
+                <% end %>
             </div>
 
             <div class="col-sm-6">
